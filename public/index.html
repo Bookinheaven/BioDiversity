@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biodiversity</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="icon" type="image/x-icon" href="../resources/icon.ico">
+
+</head>
+<body>
+    <header class="hero-header">
+    <div class="hero-content">
+      <h1 id="typing-header">Biodiversity</h1>
+      <p>Your guide to Earth's incredible diversity of life</p>
+    </div>
+    
+  </header>
+  
+  <nav>
+    <div class="nav-container">
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">🌿 Biodiversity</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#facts">Facts</a></li>
+        <li><a href="#timeline">History</a></li>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#conservation">Conservation</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+        <li><a href="#campaigns">Campaigns</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <section id="about">
+      <h2>About Biodiversity</h2>
+      <p>Biodiversity represents the variety and variability of life on Earth. It includes the diversity of species, ecosystems, and genetic variations within species. Biodiversity plays a crucial role in maintaining ecosystem balance and resilience.</p>
+      <p>It supports everything in nature we need to survive: food, clean water, medicine, and shelter. Losing biodiversity means losing these vital resources.</p>
+    </section>
+
+    <section id="facts" class="facts-section">
+        <div class="container">
+          <h2 class="section-title">🌍 Fascinating Biodiversity Facts</h2>
+          <p class="section-intro">
+            Discover incredible insights about life on Earth and the ecosystems that support it.
+          </p>
+          
+          <div class="facts-grid">
+            <div class="fact-card">
+              <h3><span class="Fcounter" data-target="8.7">0</span> Millions<br> Species</h3>
+            </div>
+            <div class="fact-card">
+              <h3><span class="Fcounter" data-target="2.001">0</span> Millions<br> Insects</h3>
+            </div>
+            <div class="fact-card">
+              <h3><span class="Fcounter" data-target="31.001">0</span>% <br>Forest Coverage</h3>
+            </div>
+            <div class="fact-card">
+              <h3>🌴 Tropical Treasures</h3>
+              <p>
+                Tropical rainforests, coral reefs, and mangroves are biodiversity hotspots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+            
+    <section id="timeline">
+      <h2>Biodiversity Through Time</h2>
+      <div class="timeline-wrapper">
+        <div class="draggable-handle" id="handle"></div>
+        <div class="timeline-event" data-pos="50">
+          <h3>Prehistoric Life</h3>
+          <p>Life began in the oceans 3.5 billion years ago, leading to diverse microbial life.</p>
+        </div>
+        <div class="timeline-event" data-pos="150">
+          <h3>Age of Dinosaurs</h3>
+          <p>The Mesozoic era brought incredible biodiversity, especially among reptiles and plants.</p>
+        </div>
+        <div class="timeline-event" data-pos="250">
+          <h3>Rise of Mammals</h3>
+          <p>After the extinction of dinosaurs, mammals evolved and adapted to fill ecological niches.</p>
+        </div>
+        <div class="timeline-event" data-pos="350">
+          <h3>Modern Era</h3>
+          <p>Modern biodiversity includes millions of species, but faces threats from human activity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="issues" class="info-section">
+        <h2>🌍 Pressing Biodiversity Issues</h2>
+        <p>Our planet's biodiversity faces urgent threats that demand immediate action:</p>
+        <ul class="issue-list">
+          <li><strong>🌲 Habitat Destruction:</strong> Caused by deforestation, urban sprawl, and agriculture reducing ecosystems.</li>
+          <li><strong>🌡️ Climate Change:</strong> Alters weather patterns and shifts habitats, threatening species survival.</li>
+          <li><strong>☣️ Pollution:</strong> From plastics, chemicals, and waste — disrupting land, water, and air ecosystems.</li>
+          <li><strong>🐠 Overexploitation:</strong> Overfishing, illegal wildlife trade, and overharvesting push species to extinction.</li>
+          <li><strong>🦠 Invasive Species:</strong> Non-native organisms compete with and displace native life forms.</li>
+        </ul>
+      </section>
+      
+      <section id="conservation" class="info-section">
+        <h2>🛡️ Conservation Strategies</h2>
+        <p>Solutions lie in collaborative, science-based and community-led efforts:</p>
+        <ul class="conservation-list">
+          <li>🏞️ Establishing protected areas like national parks and wildlife reserves</li>
+          <li>🚫 Enforcing anti-poaching laws and curbing illegal trade</li>
+          <li>🌱 Promoting indigenous knowledge and local stewardship</li>
+          <li>🌳 Rewilding and afforestation to restore damaged ecosystems</li>
+          <li>📢 Raising awareness and educating people on biodiversity values</li>
+        </ul>
+      </section>      
+
+    <section id="gallery">
+        <h2>🌿 Interactive Gallery</h2>
+        <div class="gallery">
+          <figure>
+            <img src="../resources/Rainforest.jpg" alt="Rainforest" loading="lazy">
+            <figcaption>Rainforest</figcaption>
+          </figure>
+          <figure>
+            <img src="../resources/CoralReef.jpg" alt="Coral Reef" loading="lazy">
+            <figcaption>Coral Reef</figcaption>
+          </figure>
+          <figure>
+            <img src="../resources/Mountains.jpg" alt="Mountains" loading="lazy">
+            <figcaption>Mountains</figcaption>
+          </figure>
+          <figure>
+            <img src="../resources/Savanna.jpg" alt="Savanna" loading="lazy">
+            <figcaption>Savanna</figcaption>
+          </figure>
+          <figure>
+            <img src="../resources/Wetland.jpg" alt="Wetland" loading="lazy">
+            <figcaption>Wetland</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../resources/WesternGhats.jpg" alt="Western Ghats" loading="lazy">
+            <figcaption>Western Ghats</figcaption>
+          </figure>
+
+        </div>
+    </section>
+      
+    <section id="statistics">
+        <h2>Biodiversity in Numbers</h2>
+        <div class="statistics">
+          <div class="stat">
+            <div class="counter" data-target="1200000000">0</div>
+            <strong>Hectares</strong>
+            <p>Forest cover worldwide</p>
+          </div>
+          <div class="stat">
+            <div class="counter" data-target="450000">0</div>
+            <strong>Species</strong>
+            <p>Documented global plant diversity</p>
+          </div>
+          <div class="stat">
+            <div class="counter" data-target="5000">0</div>
+            <strong>Marine Species</strong>
+            <p>New species discovered each year in the ocean</p>
+          </div>
+          <div class="stat">
+            <div class="counter" data-target="10">0</div>
+            <strong>% Annual Loss</strong>
+            <p>Rate of global biodiversity decline</p>
+          </div>
+        </div>
+      </section>
+      
+    <section id="news">
+        <h2>Latest Biodiversity News</h2>
+        <div class="news">
+        <div class="news-card">
+            <div class="content">
+            <h3>New Conservation Laws</h3>
+            <p>Landmark biodiversity protection policies enacted across several nations in 2025.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="content">
+            <h3>Community Reforestation</h3>
+            <p>Over 10 million trees planted by local volunteers across 30 countries.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="content">
+            <h3>Marine Protection Zones</h3>
+            <p>Global marine reserves expanded by 15%, supporting thriving marine ecosystems.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section id="map-section">
+        <div class="map-container">
+          <h2>Biodiversity Around the World</h2>
+          <p class="map-description">
+            🌱 Explore global biodiversity hotspots, protected areas, and key conservation efforts.
+          </p>
+      
+          <div class="filter-container">
+            <label for="continentFilter" class="filter-label">Filter by Continent:</label>
+            <select id="continentFilter" class="continent-select">
+              <option value="all">🌍 Show All</option>
+              <option value="South America">South America</option>
+              <option value="Africa">Africa</option>
+              <option value="Asia">Asia</option>
+              <option value="Oceania">Oceania</option>
+              <option value="Central America">Central America</option>
+            </select>
+          </div>
+      
+          <div id="biodiversityMap" class="map-box"></div>
+        </div>
+      </section>
+      
+  
+    <section id="campaigns">
+      <h2>Join Our Campaigns</h2>
+      <p>Help us make a difference. Every action counts!</p>
+      <div class="campaigns">
+        <div class="campaign">
+          <h3>Save the Rainforests</h3>
+          <p>Protect forest ecosystems and indigenous communities.</p>
+          <button onclick="joinCampaign('Save the Rainforests')">Join Now</button>
+        </div>
+        <div class="campaign">
+          <h3>Protect Oceans</h3>
+          <p>Help us ban harmful fishing practices and promote ocean health.</p>
+          <button onclick="joinCampaign('Protect Oceans')">Join Now</button>
+        </div>
+        <div class="campaign">
+          <h3>Stop Pollution</h3>
+          <p>Raise your voice and reduce waste with our clean-up drives.</p>
+          <button onclick="joinCampaign('Stop Pollution')">Join Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Feedback</h2>
+      <p>Have ideas, questions, or suggestions? We’d love to hear from you!</p>
+      <form id="contactForm">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit">Submit Message</button>
+        <p id="responseMsg" class="response-msg"></p>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Biodiversity. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</body>
+</html>
