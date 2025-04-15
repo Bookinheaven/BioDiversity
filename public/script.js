@@ -245,10 +245,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.onload = typeWriter;
   const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
+  const navLinks = document.querySelector('.pop_nav-links');
+  const navPclinks = document.querySelector(".nav-links")
+  const popHamburger = document.querySelector('.popUpnav');
+  navPclinks.classList.remove("show")
   hamburger.addEventListener('click', () => {
+    (popHamburger.style.display == "none") ? popHamburger.style.display = "flex" : popHamburger.style.display = "none";
     navLinks.classList.toggle('show');
+    body.classList.toggle('no-scroll');
+  });
+  navLinks.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    popHamburger.style.display = "none";
   });
 
   const factsCounters = document.querySelectorAll('.Fcounter');
